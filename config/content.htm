@@ -11,9 +11,6 @@
 <p style="padding-left: 30px;"><a href="https://mde.tw/cd2021/content/SSH%20%E4%BA%86%E6%B2%92.html">SSH</a>, git submodule add URL dir, git clone recurse-submodules URL, git remote add abbr URL, cms.bat and acp.bat</p>
 <p style="padding-left: 30px;"><a href="https://wcm.cycu.org">https://wcm.cycu.org</a> (BIOS 版本: Acer R01-A4, 2009.03/:10ff::12/pj2022)</p>
 <p style="padding-left: 30px;">本課程以每四人為一小組, 兩小組為一大組執行機電系統模型設置專案, 任務一將延續 <a href="https://mde.tw/cad2021">cad2021</a> (<a href="https://mde.tw/cad2021_hw">Hw</a>, <a href="https://mde.tw/cad2021_final">Final</a>) 中的 meArm Robot 架構 (同 <a href="https://www.ufactory.cc/pages/uarm">uarm</a>, <a href="https://cad.onshape.com/documents/21d631bfd9ab509e3a2079c0/w/832791ed26ad65d49a0711b4/e/6957bf222554da36040535be">Onshape uarm</a> 與 <a href="https://github.com/AliShug/EvoArm">Evoarm</a>) 完成<a href="https://github.com/mdecourse/cd2022/discussions/1#discussioncomment-1984898">課程主題一</a>.</p>
-<p style="padding-left: 60px;">(1) <a href="https://github.com/mdecourse/cd2022/discussions/11">整理 meArm 零組件檔案</a></p>
-<p style="padding-left: 60px;">(2) <a href="https://github.com/mdecourse/cd2022/discussions/12">meArm pick and place 模擬</a></p>
-<p style="padding-left: 60px;">(3) <a href="https://github.com/mdecourse/cd2022/discussions/13">Python remote API 模擬</a> (CoppeliaSim <a href="https://drive.google.com/file/d/1ZkKa4rl0fsmqsMWegPWjSVUW__9PQ3yh/view?usp=sharing">4.1.0</a>, <a href="https://drive.google.com/file/d/16tiFBeeV3OEwomioM9MQxQIUJwEyzcQy/view?usp=sharing">4.2.0</a>), 直接以 Python script 操控 (<a href="https://drive.google.com/file/d/1Y5XScY8-xkc1XQVOn3RsEJ8ds-byfS3s/view?usp=sharing">4.3.0</a>)</p>
 <p style="padding-left: 30px;">課程主題二: 分別利用 <a href="https://mde.tw/cad2021/content/Compile%20Solvespace.html">Solvespace</a>, <a href="https://mde.tw/cad2021_hw/content/NX1980.html">NX1980</a> 與 <a href="https://www.onshape.com/en/">Onshape</a>, 參考<a href="/downloads/Not_so_new_type_of_walking_machine.pdf">行走機構文獻</a>, 設計一款可配合 meArm Robot 上下載運物件 (loading and unloading) 的行走機構.</p>
 <p style="padding-left: 30px;">課程主題三: 每一大組必須將 Github 上的大組倉儲與網站內容, 設法同步至電腦輔助設計室 <a href="http://project.mde.tw/blog/yen-dian-nao-fu-zhu-she-ji-shi-dian-nao-pei-zhi.html">Skylake MD790</a> 電腦第三磁區中的 <a href="https://fossil-scm.org/home/doc/trunk/www/server/">Fossil SCM server</a>.</p>
 <h4>電腦輔助設計室與協同設計室行事曆</h4>
@@ -547,9 +544,7 @@ doc["tetris"].bind("click", tetris.do)
 <p>An educational entity may use CoppeliaSim Edu under following conditions:</p>
 <p style="padding-left: 30px;">usage should be non-commercial</p>
 <p>cd2022 downloads are provided by cd2022 At mde</p>
-<p><a href="https://drive.google.com/file/d/1ZkKa4rl0fsmqsMWegPWjSVUW__9PQ3yh/view?usp=sharing">CoppeliaSim Edu 4.1.0 Portable</a> (official and self-compiled versions)</p>
-<p><a href="https://drive.google.com/file/d/16tiFBeeV3OEwomioM9MQxQIUJwEyzcQy/view?usp=sharing">CoppeliaSim Edu 4.2.0 Portable</a> (official version)</p>
-<p><a href="https://drive.google.com/file/d/1Y5XScY8-xkc1XQVOn3RsEJ8ds-byfS3s/view?usp=sharing">CoppeliaSim Edu 4.3.0 Portable</a> (<a href="https://www.coppeliarobotics.com/helpFiles/en/versionInfo.htm#coppeliaSim4.3.0">What's new</a>)</p>
+<p>Coppeliasim 4.3.0</p>
 <p style="padding-left: 30px;">內建 script 除了支援 Lua, 同時<a href="https://www.coppeliarobotics.com/helpFiles/en/luaPythonDifferences.htm">支援 Python</a> (<a href="https://www.coppeliarobotics.com/helpFiles/en/scripts.htm">Scripts in Lua and Python</a>), 但需在啟動前設定 system/usrset.txt 中的 defaultPython =  Y:/Python395/python.exe, 且安裝 <a href="https://pyzmq.readthedocs.io/en/latest/">pyzmq</a> 與 <a href="https://pypi.org/project/cbor/">cbor</a> 等模組.</p>
 <p style="padding-left: 30px;">pip install pyzmq cbor</p>
 <p style="padding-left: 30px;"><a href="https://www.coppeliarobotics.com/helpFiles/en/apiFunctions.htm">regular api reference</a></p>
@@ -561,9 +556,7 @@ doc["tetris"].bind("click", tetris.do)
 <p><a href="https://drive.google.com/file/d/17wDJd6AeMhwrOzWGO_o8afCEsFKh3Hy9/view">NX1980 portable</a> (for @gm users only, file size: 3 GB, extracted size: 15.2 GB)</p>
 <hr/>
 <h4>Compile CoppliaSim Portable System:</h4>
-<p><a href="https://drive.google.com/file/d/1hEGgONw8ahNs7JPAKOurc7JvGfhgO2zY/view?usp=sharing">compile_copsim_for_pj2022.7z</a> (file size: 4 GB, extracted size: 14 GB)</p>
 <p><a href="https://drive.google.com/file/d/16L08jH3ZtoMeeGWBJrP9DuIk-cby_Wqw/view?usp=sharing">compile_copsim_for_cd2022.7z</a> (file size: 5 GB, extracted size: 17.3 GB), 包含除了 NX1980 之外的所有課程相關可攜程式套件.</p>
-<p>下載 <a href="https://drive.google.com/file/d/1Cq6J8hVS0JUBAu8Nkt2pfrCK5ua3OYnF/view?usp=sharing">PUTTY_0.74.7z</a> (下載 940 KB, 解開壓縮後 4 MB)</p>
 <p>下載 <a href="https://drive.google.com/file/d/1Av_AlOG33lsXDCZnePooj6MGbItuq22p/view?usp=sharing">PUTTY_0.76.7z</a> (下載 1 MB, 解開壓縮後 4.36 MB)</p>
 <p style="padding-left: 30px;">請注意!! 版本很重要, 使用 PUTTY 0.74 建立的 keys, 無法在 0.76 版中使用.</p>
 <hr/>
@@ -571,4 +564,3 @@ doc["tetris"].bind("click", tetris.do)
 <p><a href="https://cyberbotics.com/doc/guide/webots-license-agreement">Webots 使用授權</a>較 <a href="https://www.coppeliarobotics.com/helpFiles/en/licensing.htm">CoppeliaSim 使用授權</a>寬鬆.</p>
 <p>Webots 對於全球資訊網的支援( <a href="https://robotbenchmark.net/">https://robotbenchmark.net/</a>) 較 CoppeliaSim 佳 (CoppeliaSim 自 4.3.0 rev2 透過 <a href="https://github.com/CoppeliaRobotics/threejsFrontend">three.js</a>, <a href="https://www.coppeliarobotics.com/helpFiles/en/externalFrontEnd.htm">支援瀏覽器前端展示</a>).</p>
 <p>CoppeliaSim 執行時所需獨立顯卡的要求 (<a href="https://forum.coppeliarobotics.com/viewtopic.php?t=1707">requirements</a>) 較 Webots (<a href="https://cyberbotics.com/doc/guide/system-requirements">requirements</a>) 低.</p>
-<p>下載 <a href="https://drive.google.com/file/d/1vJpjVIXqCNFR7EzjwdEFAfQ6Jsekz21T/view?usp=sharing">webots_2022a.7z</a> (file size: 315 MB, extracted size: 1.7 GB)</p>
